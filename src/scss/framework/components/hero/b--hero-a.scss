@@ -32,6 +32,8 @@
         }
         &__media{
             height: $measure*50;
+            stroke-width: 2px;
+            stroke: map-get($color-options, d);
             @media all and (max-width: $tabletp){
                 height: $measure*20;
             }

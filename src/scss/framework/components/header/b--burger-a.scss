@@ -1,29 +1,11 @@
-body{
-    overflow-x: hidden;
-}
-
 #menuToggle{
     display: block;
-    //position: relative;
-    //top: 50px;
-    //right: 50px;
     position: absolute;
     top: 3px;
     right: 0;
-    
     z-index: 1;
-    
     -webkit-user-select: none;
     user-select: none;
-    a{
-        text-decoration: none;
-        color: #232323;
-        
-        transition: color 0.3s ease;
-        &:hover{
-            color: tomato;
-        }
-    }
     input{
         display: block;
         width: 40px;
@@ -31,12 +13,9 @@ body{
         position: absolute;
         top: -7px;
         left: -5px;
-        
         cursor: pointer;
-        
         opacity: 0; /* hide this */
         z-index: 2; /* and place it over the hamburger */
-        
         -webkit-touch-callout: none;
     }
     /*
@@ -48,13 +27,9 @@ body{
         height: 4px;
         margin-bottom: 5px;
         position: relative;
-        
         background: map-get($color-options, a);
-        
         z-index: 1;
-        
         transform-origin: 4px 0px;
-        
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
         background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
         opacity 0.55s ease;
@@ -99,26 +74,49 @@ body{
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu {
+ .b--nav-a{
     position: absolute;
     width: 100vw;
     height: 130vh;
     margin: -100px 0 0 0;
-    padding: 50px;
-    padding-top: 125px;
-    right: -100px;
+    padding: $measure*19 $measure*12;
+    right: -90px;
     background: map-get($color-options, b);
+    //background-image: url("https://halabedi.eus/wp-content/uploads/2019/01/gasteizko_gaztetxea1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */
-    
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-    
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    li{
-        padding: 10px 0;
-        font-size: 22px;
+    @media all and (max-width: $tabletl){
+        right: -80px;
+        padding: $measure*19 $measure*8;
+    }
+    @media all and (max-width: $tabletp){
+        right: -60px;
+        padding: $measure*19 $measure*6;
+    }
+    @media all and (max-width: $mobile){
+        right: -42px;
+        padding: $measure*19 $measure*4;
+    }
+    &__list-item{
+        @include make-bt-c();
+        &__link{
+            text-decoration: none;
+            @include make-font-c();
+            color: map-get($color-options, a);
+            text-transform: uppercase;
+            
+            transition: color 0.3s ease;
+            &:hover{
+                color: map-get($color-options, d);
+            }
+        }
     }
 }
 

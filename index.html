@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gasteizko Gaztetxea - Agenda</title>
     <link rel="stylesheet" href="./theme/css/common.css">
+    <!-- Include lazylinepainter -->
+    <script src="./theme/js/lazy-line-painter-1.9.6.min.js"></script>
+
+    <script type="text/javascript">
+
+      (function(){ 
+
+        document.onreadystatechange = () => {
+
+          if (document.readyState === 'complete') {
+                    
+            /**
+             * Setup your Lazy Line element.
+             * see README file for more settings
+             */
+
+            let el = document.querySelector('#egutegia4');
+            let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutSine","strokeWidth":2.1,"strokeOpacity":1,"strokeColor":"#C12656","strokeCap":"square"}); 
+            myAnimation.paint(); 
+          }
+        }
+
+      })();
+
+    </script>
 </head>
 <body>
     <!-- Header-a -->
@@ -19,9 +44,9 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <nav class="b--nav-a__list-group" id="menu">
-                                    <li class="b--nav-a__list-group__list-item"><a class="b--nav-a__list-group__list-item__link" href="./index.html">Agenda</a></li>
-                                    <li class="b--nav-a__list-group__list-item"><a class="b--nav-a__list-group__list-item__link" href="./aktualitatea.html">Aktualitatea</a></li>
+                                <nav class="b--nav-a" style="background-image: url('./theme/img/gasteizko_gaztetxea.jpg');">
+                                    <li class="b--nav-a__list-item"><a class="b--nav-a__list-item__link" href="./index.html">Agenda</a></li>
+                                    <li class="b--nav-a__list-item"><a class="b--nav-a__list-item__link" href="./aktualitatea.html">Aktualitatea</a></li>
                                 </nav>
                             </div>
                     </div>
@@ -46,7 +71,35 @@
                             </div>
                         </div>
                         <div class="b--hero-a__back-items">
-                            <img class="b--hero-a__back-items__media" src="./theme/img/egutegia-2.svg" alt="egutegia">
+                            <svg class="b--hero-a__back-items__media" version="1.1" id="egutegia4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="480.678px" height="463.899px" viewBox="0 0 480.678 463.899" enable-background="new 0 0 480.678 463.899" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+                                <path fill="none" stroke-miterlimit="10" d="M440.154,5.249c-50-8.667-86-3.334-123.333-0.667&#10;&#9;s-71.333,3.667-86,5.667s-38.001,4.333-46.667,4.333s-20,48-24,54c11,2,54.084,2.619,77.334,4c33.666,2,158.333,2.666,184.666,7.333&#10;&#9;c15,14.666,34.668,38.667,41.334,44.667c6.999-7,7.333-24.666,9.333-29.333s5.999-26,7.333-30c-5-17-30.333-44.667-38-57.333&#10;&#9;c-5-5.667-10.666,20.667-12.666,29.333s-5.334,29.333-7.334,32.667" data-llp-id="egutegia4-0" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M163.817,68.915c-3.667,11.333-25.669,79-38.335,96&#10;&#9;s-16.003,29.507-21.333,37C68.82,251.581,10.154,274.248,0.817,293.582c25.67-1.334,43.003,16.332,59.668,37.668&#10;&#9;c27.573,35.301,161.668,22.997,210.001-32.003c10.172-11.575,51.077-46.303,69.667-71.665c3.666-5.001,57.662-60.336,83.331-145.668&#10;&#9;" data-llp-id="egutegia4-1" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M273.486,295.917&#10;&#9;c-13.667,7.667-81.333,52.667-125,5.667c-14.668,11.667-51.001,45.333-67.667,32.666" data-llp-id="egutegia4-2" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M148.488,253.915&#10;&#9;c7.333,0.667,46.666,16.334,56.332,24.334c2.827-2.199,5.813-4.933,6.001-7c-1.667-4-10.333-4.333-0.333-20&#10;&#9;s51.999-80.667,57.999-122c-8.667-4.667-17.667-4.667-26.667-6c-6.333,6.667-16.666,23-37,27.667c-0.666,2.333,15,9.666,21,10.333&#10;&#9;c-8.666,31.333-47.467,74.468-51.333,78.333c-5.667,5.666-6.662,7.214-19,6.333c-4,0.667-5.333,3-6.333,6.334" data-llp-id="egutegia4-3" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M45.821,315.915&#10;&#9;c-4.667,6.667-10.001,10.668-12.667,13.334c4.999,5.996,13.547,8.281,19.334,10c12.332,3.663,34.667,16,57.334,27.666&#10;&#9;s95.998,33.33,121,35c76.331-57.003,160.665-204.669,178.999-283.001" data-llp-id="egutegia4-4" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M55.487,340.749c-2,5-4.166,8.666-6.333,13&#10;&#9;c8.833,7.833,92.982,38.695,110.833,47.333c31,15,105.5,41.5,146.5,57.5c16.5-17,51-147.5,58-164s22-57.5,25-81&#10;&#9;c2.561-20.061,18-57.5,21.5-73c2.438-10.796,11-32,11-36.5" data-llp-id="egutegia4-5" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M311.155,452.583&#10;&#9;c5.333,3.333,25.001,9.666,28.667,10.333" data-llp-id="egutegia4-6" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M347.987,435.082c-1,5-8.833,21.667-7.5,26.5&#10;&#9;s8.001-23.667,10.167-32.5" data-llp-id="egutegia4-7" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M347.987,435.082&#10;&#9;c-2.667,10.667-9.833,21.333-7.5,26.5c2.5,0,8.001-23.667,10.167-32.5" data-llp-id="egutegia4-8" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M356.987,395.582c5.75-11.5,4.75-20.5,8-30.25&#10;&#9;s9.5-34,10-40.5s12.25-57.75,13.25-62.25" data-llp-id="egutegia4-9" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M345.737,456.332c2.25,2.25,5,2.5,8.75,3&#10;&#9;s8.806,3.329,18.5-4.75c1.5-1.25,2.487,0.25,5,0.25c1.75,0,3.75-1.75,7.25-1c4.645,0.995,5-3,5.75-6c1.191-4.765,8.5-61.5,12.25-71&#10;&#9;s15.5-54.75,17.25-62.25s10.84-51.75,15-62.25c5.25-13.25,21.938-68.007,20.5-102.5c-0.25-6,3-24.75,4.75-28.25" data-llp-id="egutegia4-10" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M351.821,458.249c1-7.333,5.667-23,6-26&#10;&#9;s6.334-30,7.667-33.333" data-llp-id="egutegia4-11" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M365.821,459.249&#10;&#9;c1.667-5.666,3.666-10.666,4.333-15.666" data-llp-id="egutegia4-12" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M369.488,436.916&#10;&#9;c2.333-8.667,9.176-50.736,10.666-66c1.334-13.666,10.335-47,13.668-60s17.333-74,18.666-93.667" data-llp-id="egutegia4-13" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M378.489,348.916c3-8.333,4.332-17.332,5.666-26.666&#10;&#9;s4.667-9,4.667-19.667" data-llp-id="egutegia4-14" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M393.156,261.25c6.333-12.666,4-38,7-48.667" data-llp-id="egutegia4-15" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M404.489,203.917c2-8.667,4-24.667,5-29" data-llp-id="egutegia4-16" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M410.822,191.917c4-5,4.333-6.667,7-19.667&#10;&#9;s7.334-25.667,8.667-34" data-llp-id="egutegia4-17" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M424.489,214.917c3.667-10.667,6.667-24.667,7-36&#10;&#9;s2.667-40.333,6-47" data-llp-id="egutegia4-18" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M377.821,422.583c4.667-8.333,4-20.334,5-24" data-llp-id="egutegia4-19" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M383.488,381.917&#10;&#9;c2.667-10.334,22.667-95.334,25.334-114.334" data-llp-id="egutegia4-20" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M427.489,226.917&#10;&#9;c2.333-12.667,13.666-87.666,18.333-93.333" data-llp-id="egutegia4-21" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M380.489,452.917c0.334-7.333,4-22.333,4-28.333" data-llp-id="egutegia4-22" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M386.823,411.583c2.333-7.667,5-22,6-28.667&#10;&#9;s26.333-103.334,27-110.667s2.999-23.667,6.333-26" data-llp-id="egutegia4-23" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M434.823,233.917c2.333-7.333,4.999-22.333,5.333-32&#10;&#9;" data-llp-id="egutegia4-24" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M323.737,42.332c-9.75-1.75-26.75-7.75-41.5-7.75&#10;&#9;s-35.5,2.5-39.5,5.25s-1.75,6,0.25,7.25s30.25-1.25,39.5-1s37,4,41,3.75s3-4.25,0.75-6.5s-2-2.438-3-3.5&#10;&#9;c7-2.75,13.562,14.625-1.5,11.25c17.5,14.25,25.188-24.75-5.75-12.312c26.688-6,20.938,22.625,0,13.062" data-llp-id="egutegia4-25" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                                <path fill="none" stroke-miterlimit="10" d="M250.404,37.248&#10;&#9;c-10.334-5.667-19.542,12.333-3.667,10.833c-19.125,3.375-9.125-18.958,5.917-12.5c-8.958-16.458-37.542,23.5,0.583,12.375" data-llp-id="egutegia4-26" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
+                            </svg>
                         </div>
                     </div>
                 </div>

@@ -8,6 +8,7 @@
 }
 
 body{
+    overflow-x: hidden;
     background-color:map-get($color-options, b);
     font-family: $font-b;
     font-weight: 300;

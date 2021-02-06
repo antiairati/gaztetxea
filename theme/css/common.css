@@ -31,6 +31,7 @@
   border: none; }
 
 body {
+  overflow-x: hidden;
   background-color: #F4F4F4;
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 300;
@@ -3567,9 +3568,6 @@ select:-moz-focusring {
         background-color: #1C1C1C;
         color: #F4F4F4; }
 
-body {
-  overflow-x: hidden; }
-
 #menuToggle {
   display: block;
   position: absolute;
@@ -3594,12 +3592,6 @@ body {
   /*
   * And let's slide it in from the left
   */ }
-  #menuToggle a {
-    text-decoration: none;
-    color: #232323;
-    transition: color 0.3s ease; }
-    #menuToggle a:hover {
-      color: tomato; }
   #menuToggle input {
     display: block;
     width: 40px;
@@ -3644,24 +3636,55 @@ body {
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu {
+.b--nav-a {
   position: absolute;
   width: 100vw;
   height: 130vh;
   margin: -100px 0 0 0;
-  padding: 50px;
-  padding-top: 125px;
-  right: -100px;
+  padding: 9.5rem 6rem;
+  right: -90px;
   background: #F4F4F4;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-  #menu li {
-    padding: 10px 0;
-    font-size: 22px; }
+  @media all and (max-width: 1200px) {
+    .b--nav-a {
+      right: -80px;
+      padding: 9.5rem 4rem; } }
+  @media all and (max-width: 992px) {
+    .b--nav-a {
+      right: -60px;
+      padding: 9.5rem 3rem; } }
+  @media all and (max-width: 600px) {
+    .b--nav-a {
+      right: -42px;
+      padding: 9.5rem 2rem; } }
+  .b--nav-a__list-item {
+    margin-bottom: 1.5rem; }
+    .b--nav-a__list-item__link {
+      text-decoration: none;
+      font-family: "Archivo", Helvetica, sans-serif;
+      font-weight: 900;
+      line-height: normal;
+      font-size: 2.5rem;
+      color: #1C1C1C;
+      text-transform: uppercase;
+      transition: color 0.3s ease; }
+      @media all and (max-width: 1200px) {
+        .b--nav-a__list-item__link {
+          font-size: 2rem; } }
+      @media all and (max-width: 600px) {
+        .b--nav-a__list-item__link {
+          font-size: 1.235rem;
+          line-height: 1.4rem; } }
+      .b--nav-a__list-item__link:hover {
+        color: #C12656; }
 
 .b--footer-a {
   padding: 2.5rem 0;
@@ -4109,7 +4132,9 @@ body {
       .b--hero-a__back-items {
         position: absolute; } }
     .b--hero-a__back-items__media {
-      height: 25rem; }
+      height: 25rem;
+      stroke-width: 2px;
+      stroke: #C12656; }
       @media all and (max-width: 992px) {
         .b--hero-a__back-items__media {
           height: 10rem; } }
