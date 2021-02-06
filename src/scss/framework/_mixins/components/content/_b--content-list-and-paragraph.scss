@@ -1,0 +1,141 @@
+@mixin lists-and-paragraphs($_color-a, $_color-b){
+    ul{
+        list-style-type: none;
+        list-style-position: outside;
+        margin-left: 0.65rem;
+        
+        li{
+            padding-left: 28px;
+            position: relative;
+            &::marker{
+                display: none;
+            }
+            &:before{
+                content: '\25A0';
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 1rem;
+                color: $_color-b;
+                // iPad
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px)  { 
+                    font-size: 0.5rem;
+                }
+                // iPad 3 & 4
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px)
+                and (-webkit-min-device-pixel-ratio: 2) { 
+                    font-size: 0.5rem;
+                }
+                // iPad Retina
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px)
+                and (-webkit-min-device-pixel-ratio: 2) { 
+                    font-size: 0.5rem;
+                }
+                // iPad 1 & 2
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px) 
+                and (-webkit-min-device-pixel-ratio: 1){ 
+                    font-size: 0.5rem;
+                }
+                // iPad Mini
+                @media only screen 
+                and (min-device-width : 768px) 
+                and (max-device-width : 1024px)
+                and (-webkit-min-device-pixel-ratio: 1)  { 
+                    font-size: 0.5rem;
+                }
+                // iPhone 11, iPhone XR
+                @media only screen 
+                and (device-width: 414px) 
+                and (device-height: 896px) 
+                and (-webkit-device-pixel-ratio: 2) { 
+                    font-size: 0.5rem;
+                }
+                // iPhone 11 Pro Max, iPhone Xs Max
+                @media only screen 
+                and (device-width: 414px) 
+                and (device-height: 896px) 
+                and (-webkit-device-pixel-ratio: 3) {
+                    font-size: 0.5rem;
+                }
+                // iPhone X
+                @media only screen 
+                and (min-device-width : 375px) 
+                and (max-device-width : 812px)
+                and (-webkit-device-pixel-ratio : 3) {
+                    font-size: 0.5rem;
+                }
+                // iPhone 10
+                @media only screen 
+                and (min-device-width : 375px) 
+                and (max-device-width : 812px)
+                and (-webkit-device-pixel-ratio : 3) {
+                    font-size: 0.5rem;
+                }
+                // iPhone 6, 7 & 8
+                @media only screen 
+                and (min-device-width : 375px) 
+                and (max-device-width : 667px) { 
+                    font-size: 0.5rem;
+                }
+                // iPhone 6, 7 & 8 Plus
+                @media only screen 
+                and (min-device-width : 414px) 
+                and (max-device-width : 736px) {
+                    font-size: 0.5rem;
+                }
+                // iPhone 5 & 5S
+                @media only screen 
+                and (min-device-width : 320px) 
+                and (max-device-width : 568px) {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    ol{
+        list-style-type: decimal; 
+        margin-left: 0px;
+        list-style-position: inside;
+        li{
+            &::marker{
+                margin-right: $measure*3;
+            }
+        }
+    }
+    ul, ol{
+        margin-bottom: $measure*3;
+        li{
+            @include make-font-g();
+            color:$_color-a;
+            margin-bottom: $measure*2;
+            ul, ol{
+                margin-top: $measure*2;
+            }
+            ul{
+                li{ 
+                    &::marker{
+                        display: none;
+                    }
+                    &:before{
+                        color: rgba($_color-b, .4);
+                    }
+                }
+            }
+        }
+    }
+    p{
+        @include make-font-g();
+        color:$_color-a; 
+        margin-bottom: $measure*3;
+    }
+    em{font-style: italic;}
+    strong{font-weight: bold;}
+}

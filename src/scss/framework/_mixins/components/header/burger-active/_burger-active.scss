@@ -1,0 +1,10 @@
+@mixin burger-active__list-group{
+    pointer-events: all;
+    width: 100%;
+    transition: width $time-a ease-in-out;
+}
+
+@mixin burger-active__list-group__list-item{
+    opacity: 1;
+    transition: opacity $time-a ease-in-out $time-a;
+}

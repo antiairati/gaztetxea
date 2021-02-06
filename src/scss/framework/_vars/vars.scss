@@ -1,0 +1,77 @@
+/*
+    Foundations
+*/
+
+/* Core Colors */
+$color-a:#1C1C1C;
+$color-b:#F4F4F4;
+$color-c:#CC5512;
+$color-d:#C12656;
+
+$color-options: (
+    a:$color-a,
+    b:$color-b,
+    c:$color-c,
+    d:$color-d,
+);
+
+/* Typography */
+$font-a : 'Archivo', Helvetica, sans-serif;
+$font-b : 'Open Sans', Helvetica, sans-serif;
+
+
+// body default
+$font-body-size:16px;/* 1rem = 16px */
+$line-height:1.5;
+
+
+/* Grid */
+$g-container-width: 1380px;
+
+$all:0; 
+$laptop:1440px;
+$tabletl:1200px;
+$tabletp:992px;
+$mobile:600px;
+$viewport-layouts:(
+    "all": $all,
+    "laptop": $laptop, 
+    "tabletl": $tabletl, 
+    "tabletp": $tabletp, 
+    "mobile":$mobile, 
+);
+$columns: 12;
+$gutter-width: 2rem;
+$half-gutter-width: $gutter-width / 2;
+$gutter-compensation: -1 * $half-gutter-width;
+
+// Use for almost all Uitlities:
+// Display, Aspect Ratio, Flex, Float, Justify, Spacing, Text-align
+$breakpoints-grid: (
+    all:  $all,
+    laptop:  $laptop,
+    tabletl:  $tabletl,
+    tabletp:  $tabletp,
+    mobile: $mobile,
+) !default;
+
+
+/*
+    End Foundations
+*/
+
+
+// Measure
+$measure: 0.5rem; /* 0.5rem = 8px */
+
+$border-radius-a: 2px;
+$border-radius-b: 8px;
+
+$time-a:.3s;
+$time-b:.6s;
+$time-c:.9s;
+
+$shadow-a: 0px 8px 24px 0px rgba($color-a, 0.25);
+$shadow-b: 0px 8px 24px 0px rgba($color-a, 0.1);
+
+$border-a: 1px solid rgba($color-a, 0.15);

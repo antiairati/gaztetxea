@@ -1,0 +1,29 @@
+@mixin make-generic-input($colortext) {
+    font-size: 1em;
+    padding: $measure*1.876 $measure*3 $measure*1.876 $measure;
+    background: transparent!important;
+    border-bottom: 2px solid map-get($color-options, b);
+    width:100%;
+    color: map-get($color-options, $colortext);
+    font-family: inherit;
+    &::placeholder{
+        font-size: 1em;
+        font-family: inherit;
+        color: rgba(map-get($color-options, $colortext), .75);
+    }
+    &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus {
+        -webkit-text-fill-color: map-get($color-options, $colortext);
+        -webkit-box-shadow: 0 0 0px 1000px rgba($color-a, 1) inset;
+    }
+}
+
+@mixin make-generic-input-interaction(){
+    background: transparent;
+}
+
+@mixin make-input-with-error($colorborder){
+    border:1px solid map-get($color-options, $colorborder) !important;
+    &:focus{
+        border:1px solid map-get($color-options, $colorborder) !important;
+    }
+}

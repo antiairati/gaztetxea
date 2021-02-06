@@ -1,0 +1,84 @@
+/* columns*/
+/* offset */
+/* order first & last */
+
+/*Start loop columns*/
+@mixin build-columns ($size,$bkpt) {
+    @for $i from 1 through $columns {
+        @if ($size == 'all') {
+            .f--col-#{$i}{
+                @include make-col($i);
+            } 
+        }@else{
+            .f--col-#{$size}-#{$i}{
+                @media all and (max-width: #{$bkpt}){
+                    $value: (100% / $columns)*$i;
+                    flex: 0 0 $value;
+                    max-width: $value;  
+                    transition: $time-a;
+                }
+            }
+        }        
+    }
+}
+// Build Columns
+@each $size, $bkpt in $viewport-layouts {
+    @include build-columns($size,$bkpt);
+}
+/* End Responsive Columns */
+
+/* Start Responsive Offset */
+
+@mixin build-offset ($size,$bkpt) {
+    @for $i from 0 through $columns {
+        @if ($size == 'all') {
+            .f--offset-#{$i}{
+                @include make-offset($i);
+            } 
+        }@else{
+            .f--offset-#{$size}-#{$i}{
+                @media all and (max-width: #{$bkpt}){
+                    @include make-offset($i);
+                }
+            }
+        }
+    }
+}
+
+@each $size, $bkpt in $viewport-layouts {
+    @include build-offset($size,$bkpt);
+}
+/* End Responsive Offset */
+
+/* Start Responsive Order */
+@mixin build-order ($size,$bkpt) {
+    @for $i from 0 through $columns {
+        @if ($size == 'all') {
+            .f--order-#{$i}{
+                @include make-order($i);  
+            }
+        }@else{
+            .f--order-#{$size}-#{$i}{
+                @media all and (max-width: #{$bkpt}){
+                    @include make-order($i); 
+                }
+            }
+        }
+    }
+    @if ($size == 'all') {
+        .f--order-first{
+            order: -1;  
+        }
+    }@else{
+        .f--order-#{$size}-first{
+            @media all and (max-width: #{$bkpt}){
+                order: -1; 
+            }
+        }
+    }
+}
+
+@each $size, $bkpt in $viewport-layouts {
+    @include build-order($size,$bkpt);
+}
+/* End Responsive Order */

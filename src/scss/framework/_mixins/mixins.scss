@@ -1,0 +1,36 @@
+/* foundation mixins*/
+@import './foundation/font/font';
+@import './foundation/grid/grid'; //import row , columns
+@import './foundation/aspect-ratio/ar';
+/* foundation mixins*/
+
+/* components*/
+@import './components/section/section';
+@import './components/block-text/block-text';
+@import './components/link/link';
+@import './components/list/list';
+@import './components/btn/btn';
+@import './components/heading/heading';
+@import './components/scroll/scroll';
+
+/* form elements */
+@import './components/form-elements/checkbox';
+@import './components/form-elements/error';
+@import './components/form-elements/fe';
+@import './components/form-elements/fg';
+// @import './components/form-elements/file';
+@import './components/form-elements/generic-input';
+@import './components/form-elements/input-icon';
+@import './components/form-elements/label';
+// @import './components/form-elements/radial';
+// @import './components/form-elements/select';
+@import './components/form-elements/textarea';
+
+/* utilities*/
+@import './utilities/double-layer/double-layer';
+
+//header
+@import './components/header/header/_header';
+@import './components/header/burger/_burger';
+@import './components/header/burger-active/_burger-active';
+@import './components/header/nav/_nav'; 

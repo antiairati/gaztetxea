@@ -1,0 +1,85 @@
+/* archivo */
+@mixin make-font-a {
+    font-family: $font-a;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 7.5rem;
+    @media all and (max-width: $tabletl){
+        font-size: 5.2rem;
+    }
+    @media all and (max-width: $tabletp){
+        font-size: 2.5625rem;
+    }
+}
+@mixin make-font-b {
+    font-family: $font-a;
+    font-weight: 900;
+    line-height: 4.9rem;
+    font-size: 5rem;
+    @media all and (max-width: $tabletl){
+        font-size: 4.4rem;
+        line-height: 3.9rem;
+    }
+    @media all and (max-width: $tabletp){
+        font-size: 3rem;
+        line-height: 2.9rem;
+    }
+}
+@mixin make-font-c {
+    font-family: $font-a;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 2.5rem;
+    @media all and (max-width: $tabletl){
+        font-size: 2rem;
+    }
+    @media all and (max-width: $mobile){
+        font-size: 1.235rem;
+        line-height: 1.4rem;
+    }
+}
+/* open sans */
+@mixin make-font-d {
+    font-family: $font-b;
+    font-weight: 600;
+    line-height: 3.8rem;
+    font-size: 3.2rem;
+    @media all and (max-width: $tabletp){
+        font-size: 1.5625rem;
+        line-height: 28px;
+    }
+}
+@mixin make-font-e {
+    font-family: $font-b;
+    font-weight: normal;
+    line-height: 3.3rem;
+    font-size: 2.8rem;
+    @media all and (max-width: $tabletp){
+        font-size: 1.5625rem;
+        line-height: 28px;
+    }
+}
+@mixin make-font-f {
+    font-family: $font-b;
+    font-weight: normal;
+    line-height: 2.125rem;
+    font-size: 1.8rem;
+    @media all and (max-width: $tabletp){
+        font-size: 1.25rem;
+        line-height: 1.45rem;
+    }
+}
+@mixin make-font-g {
+    font-family: $font-b;
+    font-weight: 500;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    /*this font does not have responsive option */
+}
+@mixin make-font-h {
+    font-family: $font-b;
+    font-weight: 300;
+    line-height: 1.05rem;
+    font-size: 0.8rem;
+    /*this font does not have responsive option */
+}

@@ -1,0 +1,41 @@
+.b--hero-b{
+    padding-top: $measure*8;
+    @include make-bt-a();
+    @media all and (max-width: $tabletp){
+        padding-top: $measure*5;
+    }
+    &__back{
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none!important;
+        @include make-bt-b();
+        &__media{
+            height: $measure*5.5;
+            margin-right: $measure*2;
+            path{
+                stroke: map-get($color-options, a);
+                fill: transparent;
+                transition: all $time-a ease-in-out;
+            }
+        }
+        &__text{
+            @include make-font-f();
+            color: map-get($color-options, a);
+        }
+        &:hover, &:focus{
+            .b--hero-b__back{
+                &__media{
+                    path{
+                        fill: map-get($color-options, a);
+                    }
+                }
+            }
+        }
+    }
+    &__title{
+        @include make-font-b();
+        color: map-get($color-options, a);
+        text-transform: uppercase;
+    }
+    
+}

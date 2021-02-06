@@ -1,0 +1,24 @@
+@mixin burger {
+    width: $measure*5;
+    padding: $measure;
+    z-index: 10;
+    display: block;
+    &:hover{
+        opacity: .7;
+    }
+    &__dash{
+        width: 100%;
+        height: 1px;
+        background-color: map-get($color-options, secondary);
+        display: block;
+        margin-bottom: $measure;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &--is-active{
+        ~ .b--nav__list-group{
+            opacity: 1;
+        }
+    }
+}

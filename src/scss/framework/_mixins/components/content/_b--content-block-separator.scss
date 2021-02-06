@@ -1,0 +1,10 @@
+
+@mixin wp-block-separator($_color-a){
+    .wp-block-separator{   
+        border-bottom:1px solid $_color-a;
+        width:100%;
+        display: inline-block;
+        margin-top: $measure*3;
+        margin-bottom: $measure*3;
+    } 
+}

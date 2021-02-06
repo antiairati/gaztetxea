@@ -1,0 +1,27 @@
+@mixin make-heading-left ($colortext, $colorline){
+    @include make-font-b();
+    color: map-get($color-options, $colortext);
+    text-align: left;
+    &::after{
+        content: "";
+        width: $measure*10;
+        height: $measure/4;
+        background-color: map-get($color-options, $colorline);
+        display: block;
+        margin: $measure*3 0 auto;
+    }
+}
+
+@mixin make-heading-center ($colortext, $colorline){
+    @include make-font-b();
+    color: map-get($color-options, $colortext);
+    text-align: center;
+    &::after{
+        content: "";
+        width: $measure*10;
+        height: $measure/4;
+        background-color: map-get($color-options, $colorline);
+        display: block;
+        margin: $measure*3 auto auto;
+    }
+}

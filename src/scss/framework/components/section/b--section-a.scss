@@ -1,0 +1,15 @@
+.b--section-a{
+    @include make-section-a();
+}
+.b--section-b{
+    @include make-section-b();
+}
+.b--section-c{
+    @include make-section-c();
+}
+.b--section-d{
+    @include make-section-d();
+}
+.b--section-e{
+    @include make-section-e();
+}

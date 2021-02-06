@@ -1,0 +1,23 @@
+@import './../../_mixins/components/content/b--content-heading.scss'; // Headings from h2 to h4.
+@import './../../_mixins/components/content/b--content-list-and-paragraph.scss';
+@import './../../_mixins/components/content/b--content-links.scss';
+@import './../../_mixins/components/content/b--content-block-quote.scss';
+@import './../../_mixins/components/content/b--content-block-image.scss';
+@import './../../_mixins/components/content/b--content-images.scss';
+@import './../../_mixins/components/content/b--content-block-embed';
+@import './../../_mixins/components/content/b--content-block-separator.scss';
+
+
+
+.b--content-a{
+    @include headings ( $_color-a: map-get($color-options, a), $_color-b: map-get($color-options, a) );
+    @include lists-and-paragraphs ( $_color-a: map-get($color-options, a),  $_color-b: map-get($color-options, a) );
+    @include links($_color-a: map-get($color-options, a));
+    @include wp-block-quote($_color-a: map-get($color-options, a), $_color-b: map-get($color-options, a), $_color-c: map-get($color-options, a));
+    @include wp-block-image($_color-a: map-get($color-options, a));
+    @include images();
+    @include wp-block-separator($_color-a: map-get($color-options, d));
+    *:last-child{
+        margin-bottom: 0px!important;
+    }
+}

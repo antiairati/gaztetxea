@@ -1,0 +1,28 @@
+.b--card-c{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    @media all and (max-width: $tabletp){
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: $measure*2;
+    }
+    &__category{
+        @include make-font-f();
+        text-transform: uppercase;
+        margin-bottom: $measure/2;
+        color: map-get($color-options, d);
+    }
+    &__date{
+        @include make-font-f();
+        font-weight: bold;
+        margin-bottom: $measure/2;
+        color: map-get($color-options, d);
+    }
+    &__time{
+        @include make-font-f();
+        font-weight: bold;
+        color: map-get($color-options, d);
+    }
+}

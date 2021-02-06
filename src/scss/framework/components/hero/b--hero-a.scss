@@ -1,0 +1,40 @@
+.b--hero-a{
+    position: relative;
+    margin-bottom: $measure*20;
+    @media all and (max-width: $tabletp){
+        margin-bottom: $measure*16;
+    }
+    &__front-items{
+        position: relative;
+        padding-top: $measure*8;
+        z-index: 1;
+        @media all and (max-width: $tabletp){
+            padding-top: $measure*5;
+        }
+        &__title{
+            @include make-font-a();
+            text-transform: uppercase;
+            color: map-get($color-options, a);
+            padding-bottom: $measure*2;
+        }
+        &__subtitle{
+            @include make-font-d();
+            color: map-get($color-options, a);
+        }
+    }
+    &__back-items{
+        position: absolute;
+        bottom: -$measure*9;
+        right: 0;
+        z-index: 0;
+        @media all and (max-width: $tabletp){
+            position: absolute;
+        }
+        &__media{
+            height: $measure*50;
+            @media all and (max-width: $tabletp){
+                height: $measure*20;
+            }
+        }
+    }
+}

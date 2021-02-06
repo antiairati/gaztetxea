@@ -1,0 +1,22 @@
+@mixin make-scrollbar ($color, $colorbg, $width, $paddingright, $maxheight){
+    overflow-y: auto;
+    max-height: $maxheight;
+    padding-right: calc(#{$width} + #{$paddingright});
+    scrollbar-color: map-get($color-options, $color) rgba(map-get($color-options, $colorbg), .2); // scrollbar color firefox 
+    scrollbar-width: thin; // scrollbar width firefox 
+    /* width */
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: none;
+        background: rgba(map-get($color-options, $colorbg), .2);
+        border-radius: 50px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: map-get($color-options, $color);
+        border-radius: 50px;
+    }
+}

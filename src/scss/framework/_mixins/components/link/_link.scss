@@ -1,0 +1,10 @@
+@mixin make-link-a {
+    display: inline-block;
+    color:map-get($color-options, n);
+    text-decoration: underline;
+}
+
+
+@mixin make-link-a-interaction(){
+    text-decoration: none!important;
+}

@@ -1,0 +1,16 @@
+//header for basic and swept
+@mixin header{
+    padding: $measure*3 0;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: map-get($color-options, primary);
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+}
