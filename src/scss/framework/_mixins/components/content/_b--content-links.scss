@@ -1,0 +1,8 @@
+@mixin links($_color-a){
+    a {
+        @include make-link-a();
+        &:hover, &:focus{
+            @include make-link-a-interaction();
+        }
+    }
+}

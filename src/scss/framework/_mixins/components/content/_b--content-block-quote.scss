@@ -1,0 +1,43 @@
+@mixin wp-block-quote($_color-a, $_color-b, $_color-c){
+    .wp-block-quote{
+        border-top:1px solid $_color-c; 
+        border-bottom:1px solid $_color-c; 
+        padding: $measure*3 $measure*7;
+        margin-bottom: $measure*3;
+        position: relative;
+        @media all and (max-width: $tabletp){
+            padding: $measure*3 0;
+        }
+        &::before{
+            content: "\EA07";
+            display: inline-block;
+            font-family: "symbol";
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            font-size: 1.4em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1;
+            position: absolute;
+            top: 1.25rem;
+            left: calc(#{$measure}*7 - #{$measure}*5);
+            color: $_color-c;
+            @media all and (max-width: $tabletp){
+                content: none;
+            }
+        }
+        p{
+            @include make-font-f();
+            color: $_color-a;
+            margin-bottom: $measure*2;
+        }
+        cite{
+            @include make-font-g();
+            font-weight: bold;
+            text-transform: uppercase;
+            font-style: normal;
+            color: $_color-b;
+        }
+    } 
+}

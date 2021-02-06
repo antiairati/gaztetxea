@@ -1,0 +1,35 @@
+@mixin make-section-a {
+    padding-bottom: $measure*18;
+    @media all and (max-width: $tabletp){
+        padding-bottom: $measure*11;
+    } 
+}
+
+
+@mixin make-section-b {
+    padding-bottom: $measure*15;
+    @media all and (max-width: $tabletp){
+        padding-bottom: $measure*11;
+    } 
+}
+
+@mixin make-section-c {
+    padding-bottom: $measure*10;
+    @media all and (max-width: $tabletp){
+        padding-bottom: $measure*8;
+    } 
+}
+
+@mixin make-section-d {
+    padding-bottom: $measure*7;
+    @media all and (max-width: $tabletp){
+        padding-bottom: $measure*5;
+    } 
+}
+
+@mixin make-section-e {
+    padding-bottom: $measure*5;
+    @media all and (max-width: $tabletp) {
+        padding-bottom: $measure*3;
+    }
+}

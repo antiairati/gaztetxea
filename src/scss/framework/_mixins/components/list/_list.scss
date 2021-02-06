@@ -1,0 +1,48 @@
+// horizontal
+@mixin make-li-a{
+    display: inline-block;
+    position: relative;
+    &:not(:last-child){
+        margin-right: $measure*2;
+    }
+}
+
+// horizontal
+@mixin make-li-b{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: $measure*4;
+    }
+}
+
+// horizontal
+@mixin make-li-c{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: $measure*11;
+    }
+}
+
+// vertical
+@mixin make-li-d{
+    display: block;
+    &:not(:last-child){
+        margin-bottom: $measure*3;
+    }
+}
+
+// horizontal
+@mixin make-li-e{
+    display: inline-block;
+    &:not(:last-child){
+        margin-right: $measure*7;
+    }
+}
+
+// vertical
+@mixin make-li-f{
+    display: block;
+    &:not(:last-child){
+        margin-bottom: $measure;
+    }
+}

@@ -1,0 +1,37 @@
+
+@mixin headings($_color-a, $_color-b){
+    h1,h2,h3,h4,h6{   
+        color: $_color-a;
+    }
+    h5{
+        color: $_color-b;
+    }
+    h2{
+        @include make-font-d();
+        font-weight: bold;
+        padding-top: $measure;
+        margin-bottom: $measure;
+    }
+    h3{ 
+        @include make-font-e();
+        font-weight: bold;
+        padding-top: $measure;
+        margin-bottom: $measure; 
+    }
+    h4{ 
+        @include make-font-f();
+        font-weight: bold;
+        margin-bottom: $measure;
+    }
+    h5{ 
+        @include make-font-g();
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: $measure;
+    }
+    h6{ 
+        @include make-font-g();
+        font-weight: bold;
+        margin-bottom: $measure;
+    }
+}

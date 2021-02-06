@@ -1,0 +1,94 @@
+// @import '../../link/b--link.scss';
+
+@mixin nav{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+@mixin nav-burger{
+    flex-direction: row-reverse;
+}
+
+@mixin nav__list-group{
+    display: flex;
+    margin-right: $measure*3;
+}
+@mixin nav-burger__list-group{
+    opacity: 0;
+    margin-right: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: width $time-a ease-in-out $time-a, opacity $time-a ease-in-out $time-a*2;
+    background-color: map-get($color-options, primary);
+}
+@mixin nav-burger__list-group--responsive{
+    opacity: 0;
+    margin-right: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+    padding-top: $measure*16;
+    z-index: 0;
+    transition: width$time-a ease-in-out $time-a, opacity $time-a ease-in-out $time-a;
+    background-color: map-get($color-options, primary);
+}
+
+@mixin nav__list-group__list-item{
+    position: relative;
+    margin-right: $measure*3;
+    cursor: pointer;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+@mixin nav-burger__list-group__list-item{
+    margin-right: 0;
+    margin-bottom: $measure*3;
+    opacity: 0;
+    transition: opacity $time-a ease-in-out;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@mixin nav__list-group__list-item__link{
+    // @include build-font-fifth();
+    color: map-get($color-options, secondary);
+    // @include link-secondary();
+}
+
+@mixin burger-parent__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &::after{
+        content: "\EA01";
+        display: inline-block;
+        font-family: "symbol";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 2em;
+    }
+}
+
+//three
+

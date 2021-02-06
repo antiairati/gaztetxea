@@ -1,0 +1,6 @@
+@mixin make-error-message($colotext){
+    @include make-font-g();
+    color: map-get($color-options, $colotext);
+    margin-top: $measure;
+    display: none;
+}

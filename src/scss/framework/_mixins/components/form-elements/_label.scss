@@ -1,0 +1,12 @@
+@mixin make-label($colorlabel){
+    @include make-font-g();
+    display: block;
+    color: map-get($color-options, $colorlabel);
+}
+
+@mixin make-label-checkbox(){
+    padding-left: $measure*3.5;
+    @media all and (max-width: $tabletl){
+        margin-bottom: $measure*2;
+    }
+}

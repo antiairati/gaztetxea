@@ -1,0 +1,4 @@
+@mixin make-fe{
+    position: relative;
+    @include make-font-f();
+}

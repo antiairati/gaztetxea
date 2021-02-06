@@ -1,0 +1,38 @@
+$media-sizes:(
+    4by3: 75%,
+    // 3by2: 66%,
+    // 1by1: 100%,
+    // 3by4: 133.33%,
+    16by9: 56.25%,
+    // 2by3: 150%,
+);
+
+@mixin media-sizes($display-size,$breakpoints){
+    @each $breakpoint-name, $breakpoint-value in $breakpoints {
+        @if($breakpoint-value == 0) {
+            @each $name, $size in $display-size {
+                .f--ar-#{$name}{
+                    @include make-ar-a($size);
+                }
+            }
+        }@else{
+            @media screen and (max-width: $breakpoint-value) {
+                @each $name, $size in $display-size {
+                    .f--ar-#{$breakpoint-name}-#{$name}{
+                        @include make-ar-a($size);
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-sizes($media-sizes,$breakpoints-grid);
+
+.f--ar__item{
+    &-video{
+        @include make-ar-a-item();
+    }
+    &-img{
+        @include make-ar-a-item__img();
+    }
+}

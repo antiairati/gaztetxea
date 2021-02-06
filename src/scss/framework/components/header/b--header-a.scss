@@ -1,0 +1,28 @@
+.b--header-a{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: map-get($color-options, b);
+    padding: $measure 0;
+    border-bottom: 2px solid map-get($color-options, a);
+    z-index: 10;
+    &__wrapper{
+        position: relative;
+        &__title{
+            position: relative;
+            font-family: $font-a;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-decoration: none!important;
+            background-color: transparent;
+            color: map-get($color-options, a);
+            transition: all $time-a ease-in-out;
+            z-index: 2;
+            &:hover, &:focus{
+                background-color: map-get($color-options, a);
+                color: map-get($color-options, b);
+            }
+        }
+    }
+}

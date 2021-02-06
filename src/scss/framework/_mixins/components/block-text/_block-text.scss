@@ -1,0 +1,17 @@
+@mixin make-bt-a {
+    margin-bottom: $measure*7;
+    @media all and (max-width: $tabletp){
+        margin-bottom: $measure*3;
+    }
+}    
+
+@mixin make-bt-b {
+    margin-bottom: $measure*5;
+    @media all and (max-width: $tabletp){
+        margin-bottom: $measure*2;
+    }
+}  
+
+@mixin make-bt-c {
+    margin-bottom: $measure*3;
+}  

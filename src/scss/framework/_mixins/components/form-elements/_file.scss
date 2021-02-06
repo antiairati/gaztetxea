@@ -1,0 +1,34 @@
+@mixin make-file($colortext, $colorbtnbg, $colorbtntext){
+    cursor: pointer;
+    position: relative;
+    -webkit-padding-before: 0 !important;
+    -webkit-padding-after: 0 !important;
+    -webkit-padding-start: 0 !important;
+    border: 1px solid rgba(map-get($color-options, $colorbtnbg), .4);
+    width: 100%;
+    color: map-get($color-options, $colortext) !important;
+    @include make-font-e();
+    &::-webkit-file-upload-button {
+        cursor: pointer;
+        height: 100%;
+        padding: $measure*1.376 $measure*2;
+        appearance: none;
+        border: none;
+        background-color: map-get($color-options, $colorbtnbg);
+        color: map-get($color-options, $colorbtntext);
+        @include make-font-e();
+    }
+    &:hover,&:focus{
+        border: 1px solid rgba(map-get($color-options, $colorbtnbg), .7);
+        &::-webkit-file-upload-button {
+            opacity: .7;
+        }
+    }
+}
+
+@mixin make-file-with-error($colorborder){
+    border: 1px solid map-get($color-options, $colorborder);
+    &:focus{
+        border: 1px solid map-get($color-options, $colorborder);
+    }
+}

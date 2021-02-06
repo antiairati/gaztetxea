@@ -1,0 +1,71 @@
+.b--card-a{
+    display: inline-flex;
+    width: 100%;
+    color: map-get($color-options, a);
+    text-decoration: none!important;
+    background-color: transparent;
+    border-bottom: 3px solid map-get($color-options, a);
+    padding-bottom: $measure*3;
+    transition: all $time-a ease-in-out;
+    cursor: pointer;
+    &:not(:first-child){
+        padding-top: $measure*2;
+    }
+    &__bd{
+        width: 70%;
+        text-align: left;
+        &__hd{
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform $time-a ease-in-out;
+                background-color: map-get($color-options, a);
+                z-index: 0;
+            }
+            &__title{
+                @include make-font-c();
+                margin-bottom: $measure;
+                transition: all $time-a ease-in-out;
+                position: relative;
+                z-index: 1;
+                @media all and (max-width: $tabletp){
+                    margin-bottom: $measure/2;
+                }
+            }
+        }   
+        
+        &__category{
+            @include make-font-g();
+            text-transform: uppercase;
+            margin-bottom: $measure*2;
+            @media all and (max-width: $tabletp){
+                margin-bottom: $measure;
+            }
+        }
+        &__content{
+            @include make-font-f();
+        }
+    }
+    &__date{
+        width: 30%;
+        text-align: right;
+        @include make-font-c();
+    }
+    &:hover, &:focus{
+        .b--card-a__bd__hd{
+            &::after{
+                transform: scaleX(1);
+            }
+            &__title{
+                color: map-get($color-options, b);
+            }
+        }
+    }
+}

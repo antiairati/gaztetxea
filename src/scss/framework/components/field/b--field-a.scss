@@ -1,0 +1,16 @@
+.b--field-a{
+    margin-bottom: $measure;
+    &__input{
+        @include make-generic-input(b);
+
+    }
+    &__select{
+        @include make-generic-input(b);
+        position: relative;
+        border-top: 4px solid transparent;
+        min-height: 100%;
+    }
+    &__icon{
+        @include make-input-icon(b);
+    }
+}

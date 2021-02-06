@@ -1,0 +1,33 @@
+$display-properties:(
+  block: block,
+  // hidden:hidden,
+  none:none,
+  //inline-block:inline-block,
+  // inline:inline,
+  // table:table,
+  // table-cell:table-cell,
+  // table-row:table-row,
+  //flex:flex,
+  // inline-flex:inline-flex
+);
+@mixin display-alignment($display-prop,$breakpoints){
+  @each $breakpoint-name, $breakpoint-value in $breakpoints {
+    @if($breakpoint-value == 0) {
+      @each $name, $property in $display-prop {
+        .display-#{$name}{
+          display:$property!important;
+        }
+      }
+    }@else{
+      @media screen and (max-width: $breakpoint-value) {
+        @each $name, $property in $display-prop {
+          .display-#{$breakpoint-name}-#{$name}{
+            display:$property;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include display-alignment($display-properties,$breakpoints-grid)

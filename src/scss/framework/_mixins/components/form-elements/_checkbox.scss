@@ -1,0 +1,65 @@
+@mixin make-checkbox-wrapper(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $measure*2.5;
+    height: $measure*2.5;
+}
+
+@mixin make-checkbox($colorcheckbox){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    &:checked::after{
+        opacity: 1 !important;
+    }
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        border:1px solid rgba(map-get($color-options, $colorcheckbox), .4);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        pointer-events: none;
+        border-radius: $border-radius-a;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        opacity: 0;
+        transition: .3s;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: $measure*2;
+        height: $measure*2;
+        border-radius: $border-radius-a;
+        background-color: map-get($color-options, $colorcheckbox);
+    }
+}
+
+@mixin make-checkbox-interaction($colorbg){
+    &::before{
+        border:1px solid rgba(map-get($color-options, $colorcheckbox), .7);
+    }
+}
+
+@mixin make-checkbox-with-error($colorborder){
+    &::before{
+        border:1px solid map-get($color-options, $colorborder) !important;
+    }
+    &:focus{
+        &::before{
+            border:1px solid map-get($color-options, $colorborder) !important;
+        }
+    }
+}

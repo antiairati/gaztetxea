@@ -1,0 +1,9 @@
+.b--media-a{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    &__img{
+        border-radius: $border-radius-a;
+    }
+}

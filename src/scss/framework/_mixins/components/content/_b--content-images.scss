@@ -1,0 +1,19 @@
+@mixin images(){
+    img{
+        margin: 0 0 $measure*5;
+        height: auto;
+        width: 100%;
+        border-radius: $border-radius-a;
+        overflow: hidden;
+    }
+}
+
+@mixin images-b(){
+    img{
+        margin: 0 0 $measure*5;
+        height: auto;
+        width: auto;
+        border-radius: $border-radius-a;
+        overflow: hidden;
+    }
+}

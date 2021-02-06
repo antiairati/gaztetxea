@@ -1,0 +1,44 @@
+// if mixin is needed add here.
+@mixin make-btn ($colorbackground, $colortext, $colorborder, $content: false){
+    @if $content != false {
+        @include make-font-f($content: true);
+        font-weight: 700 !important;
+        display: inline-block !important;
+        position:relative !important;
+        padding: $measure*1.5 $measure*5 !important;
+        text-decoration: none !important;
+        color: $colortext !important;
+        background: $colorbackground !important;
+        border-radius: $border-radius-a !important;
+        border: 1px solid $colorborder !important;
+        box-shadow: $shadow-a !important;
+        transition: all $time-a ease-in-out !important;
+    }
+    @else{
+        @include make-font-f();
+        font-weight: 700;
+        display: inline-block;
+        position:relative;
+        padding: $measure*1.5 $measure*5;
+        text-decoration: none!important;
+        color: $colortext!important;
+        background: $colorbackground;
+        border-radius: $border-radius-a;
+        border: 1px solid $colorborder;
+        box-shadow: $shadow-a;
+        transition: all $time-a ease-in-out;
+    }
+}
+
+@mixin make-btn-interaction($colorhover, $content: false){
+    @if $content != false {
+        background: lighten($colorhover, 5%) !important;
+        box-shadow: $shadow-b !important;
+        border-color: lighten($colorhover, 5%) !important;
+    }
+    @else{
+        background: lighten($colorhover, 5%);
+        box-shadow: $shadow-b;
+        border-color: lighten($colorhover, 5%);
+    }
+}

@@ -1,0 +1,14 @@
+@mixin wp-block-image($_color-a){
+    .wp-block-image{
+        img{
+            margin: $measure*3 0 0;
+            border-radius: $border-radius-a;
+        }
+        figcaption{
+            @include make-font-g();
+            color: $_color-a;
+            margin-top: $measure;
+            margin-bottom: $measure*3;
+        }
+    }
+}
