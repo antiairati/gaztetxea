@@ -3749,6 +3749,12 @@ select:-moz-focusring {
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-end; }
+    @media all and (max-width: 992px) {
+      .b--footer-a__ft {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; } }
     .b--footer-a__ft__info {
       text-align: left; }
       .b--footer-a__ft__info p {

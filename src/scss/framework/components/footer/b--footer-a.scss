@@ -55,6 +55,12 @@
         display: inline-flex;
         justify-content: space-between;
         align-items: flex-end;
+        @media all and (max-width: $tabletp){
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
         &__info{
             text-align: left;
             p{
