@@ -1,4 +1,4 @@
-.b--hero-b{
+.b--hero-c{
     padding-top: $measure*8;
     @include make-bt-a();
     @media all and (max-width: $tabletp){
@@ -11,7 +11,12 @@
         @include make-bt-b();
         &__media{
             height: $measure*5.5;
+            width: $measure*5.5;
             margin-right: $measure*2;
+            @media all and (max-width: $tabletp){
+                height: $measure*3;
+                width: $measure*3;
+            }
             path{
                 stroke: map-get($color-options, a);
                 fill: transparent;
@@ -32,9 +37,25 @@
             }
         }
     }
-    &__title{
-        @include make-font-b();
-        color: map-get($color-options, a);
-        text-transform: uppercase;
+    &__bd{
+        &__title{
+            @include make-font-c();
+            color: map-get($color-options, a);
+            @include make-bt-c();
+        }
+        &__subtitle{
+            @include make-font-f();
+        }
+    }
+    &__info{
+        &__date{
+            text-align: right;
+            @include make-font-f();
+            color: map-get($color-options, c);
+            @media all and (max-width: $tabletp){
+                text-align: left;
+                margin-top: $measure*2;
+            }
+        }
     }
 }

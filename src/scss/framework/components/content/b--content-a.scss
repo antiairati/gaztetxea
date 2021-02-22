@@ -17,6 +17,13 @@
     @include wp-block-image($_color-a: map-get($color-options, a));
     @include images();
     @include wp-block-separator($_color-a: map-get($color-options, d));
+    a{
+        color: map-get($color-options, c);
+        transition: all $time-a ease-in-out;
+        &:hover, &:focus{
+            color: map-get($color-options, d);
+        }
+    }
     *:last-child{
         margin-bottom: 0px!important;
     }

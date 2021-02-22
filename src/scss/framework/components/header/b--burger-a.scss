@@ -80,7 +80,7 @@
     height: 130vh;
     margin: -100px 0 0 0;
     padding: $measure*19 $measure*12;
-    right: -90px;
+    right: -286px;
     background: map-get($color-options, b);
     //background-image: url("https://halabedi.eus/wp-content/uploads/2019/01/gasteizko_gaztetxea1.jpg");
     background-size: cover;
@@ -92,6 +92,13 @@
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    @media all and (max-width: 1680px){
+        right: -165px;
+    }
+    @media all and (max-width: $laptop){
+        right: -90px;
+        padding: $measure*19 $measure*8;
+    }
     @media all and (max-width: $tabletl){
         right: -80px;
         padding: $measure*19 $measure*8;

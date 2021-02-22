@@ -11,6 +11,9 @@
         @include make-col(2);
         //opacity: 0;
         transform: translateX(0);
+        @media all and (max-width: $tabletp){
+            @include make-col(6);
+        }
         &__icon{
             height: $measure*5.5;
             margin-right: $measure*2;
@@ -26,12 +29,20 @@
         @include make-font-f();
         color: map-get($color-options, a);
         text-align: right;
+        @media all and (max-width: $tabletp){
+            @include make-col(6);
+        }
     }
     &__title{
         @include make-col(7);
         @include make-offset(1);
         @include make-font-c();
         color: map-get($color-options, a);
+        @media all and (max-width: $tabletp){
+            @include make-col(12);
+            @include make-offset(0);
+            margin-top: $measure*2;
+        }
     }
     &:hover, &:focus{
         .b--card-b__media{

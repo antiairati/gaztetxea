@@ -14,22 +14,22 @@
 @mixin make-font-b {
     font-family: $font-a;
     font-weight: 900;
-    line-height: 4.9rem;
-    font-size: 5rem;
+    line-height: 4.4rem;
+    font-size: 3.9rem;
     @media all and (max-width: $tabletl){
-        font-size: 4.4rem;
+        font-size: 3.9rem;
         line-height: 3.9rem;
     }
     @media all and (max-width: $tabletp){
-        font-size: 3rem;
-        line-height: 2.9rem;
+        font-size: 2.3rem;
+        line-height: 2.6rem;
     }
 }
 @mixin make-font-c {
     font-family: $font-a;
     font-weight: 900;
     line-height: normal;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     @media all and (max-width: $tabletl){
         font-size: 2rem;
     }
@@ -74,7 +74,10 @@
     font-weight: 500;
     line-height: 1.7rem;
     font-size: 1rem;
-    /*this font does not have responsive option */
+    @media all and (max-width: $tabletp){
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
 }
 @mixin make-font-h {
     font-family: $font-b;

@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gasteizko Gaztetxea - Agenda</title>
     <link rel="stylesheet" href="./theme/css/common.css">
+    <link rel="shortcut icon" type="image/png" href="./theme/img/katua.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- Include lazylinepainter -->
-    <script src="./theme/js/lazy-line-painter-1.9.6.min.js"></script>
+    <script src="./theme/js/agenda-lazy-line-painter-1.9.6.min.js"></script>
 
     <script type="text/javascript">
 
@@ -22,7 +25,7 @@
              */
 
             let el = document.querySelector('#egutegia4');
-            let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutSine","strokeWidth":2.1,"strokeOpacity":1,"strokeColor":"#C12656","strokeCap":"square"}); 
+            let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutSine","strokeWidth":2.1,"strokeOpacity":1,"strokeColor":"#971437","strokeCap":"square"}); 
             myAnimation.paint(); 
           }
         }
@@ -66,12 +69,12 @@
                                     <h1 class="b--hero-a__front-items__title">Agenda</h1>
                                 </div>  
                                 <div class="f--col-8 f--col-tabletp-10">
-                                    <h2 class="b--hero-a__front-items__subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar ullamcorper dui enim nam erat augue.</h2>
+                                    <h2 class="b--hero-a__front-items__subtitle">Gaztetxean zer dagoen jakin nahi? Ekintza hauek izango ditugu hurrengo egunetan zehar.</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="b--hero-a__back-items">
-                            <svg class="b--hero-a__back-items__media" version="1.1" id="egutegia4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="480.678px" height="463.899px" viewBox="0 0 480.678 463.899" enable-background="new 0 0 480.678 463.899" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+                            <svg class="b--hero-a__back-items__media" version="1.1" id="egutegia4" x="0px" y="0px"viewBox="0 0 480.678 463.899" enable-background="new 0 0 480.678 463.899" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
                                 <path fill="none" stroke-miterlimit="10" d="M440.154,5.249c-50-8.667-86-3.334-123.333-0.667&#10;&#9;s-71.333,3.667-86,5.667s-38.001,4.333-46.667,4.333s-20,48-24,54c11,2,54.084,2.619,77.334,4c33.666,2,158.333,2.666,184.666,7.333&#10;&#9;c15,14.666,34.668,38.667,41.334,44.667c6.999-7,7.333-24.666,9.333-29.333s5.999-26,7.333-30c-5-17-30.333-44.667-38-57.333&#10;&#9;c-5-5.667-10.666,20.667-12.666,29.333s-5.334,29.333-7.334,32.667" data-llp-id="egutegia4-0" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
                                 <path fill="none" stroke-miterlimit="10" d="M163.817,68.915c-3.667,11.333-25.669,79-38.335,96&#10;&#9;s-16.003,29.507-21.333,37C68.82,251.581,10.154,274.248,0.817,293.582c25.67-1.334,43.003,16.332,59.668,37.668&#10;&#9;c27.573,35.301,161.668,22.997,210.001-32.003c10.172-11.575,51.077-46.303,69.667-71.665c3.666-5.001,57.662-60.336,83.331-145.668&#10;&#9;" data-llp-id="egutegia4-1" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
                                 <path fill="none" stroke-miterlimit="10" d="M273.486,295.917&#10;&#9;c-13.667,7.667-81.333,52.667-125,5.667c-14.668,11.667-51.001,45.333-67.667,32.666" data-llp-id="egutegia4-2" data-llp-duration="2580" data-llp-delay="0" fill-opacity="0" style=""/>
@@ -111,7 +114,7 @@
                     <!-- sticky images -->
                     <div class="f--col-4 f--offset-1 f--col-tabletp-8 f--offset-tabletp-2 f--col-mobile-12 f--offset-mobile-0 f--order-2 f--order-tabletp-1">
                         <div class="b--media-a b--sticky-a f--tabletp-pb-40">
-                            <img class="b--media-a__img b--sticky-a__content" src="./theme/img/materiala/kartela.jpg" alt="">
+                            <img class="b--media-a__img b--sticky-a__content" src="./theme/img/materiala/egitaraua.jpg" alt="egitaraua-martxoa">
                         </div>
                     </div>
                     <div class="f--col-7 f--col-tabletp-12 f--order-1 f--order-tabletp-2">
@@ -119,72 +122,82 @@
                         <a class="b--card-a" href="./ekintzak/antzara-eguna.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Antzara eguna</h4>
+                                    <h4 class="b--card-a__bd__hd__title">Antzara Eguna</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Liburu aurkezpena</p>
-                                <p class="b--card-a__bd__content">Harkaitz Cano eta Adur Larrea etorriko dira eleberri grafikoaren inguruan jarduteko.</p>
+                                <p class="b--card-a__bd__content">Harkaitz Cano eta Adur Larrea etorriko dira eleberri grafikoaren inguruan jardutera</p>
                             </div>
-                            <date class="b--card-a__date">06/03/20</date>
+                            <date class="b--card-a__date">06/03/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/monumentuak-hilotzak-hondakinak.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Gerra zibila</h4>
+                                    <h4 class="b--card-a__bd__hd__title">Monumentuak, hilotzak eta hondakinak. Memoriaren inguruko borrokak XX. eta XXI. mendeetan Euskal Herrian</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Hitzaldia</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">Josu Santamarinak Euskal Herrian XX. eta XXI. mendeetan izan diren (eta diren) memoria-erregimenez hitz egingo du</p>
                             </div>
-                            <date class="b--card-a__date">10/03/20</date>
+                            <date class="b--card-a__date">10/03/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/memoria-impunidad.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Memoria historikoa</h4>
+                                    <h4 class="b--card-a__bd__hd__title">Memoria e impunidad. La lucha por la memoria en Euskal Herria</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Solasaldia</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">La mesa redonda con Martxelo Álvarez y Lander García tratará temas en torno a la trayectoria de la lucha por la memoria histórica</p>
                             </div>
-                            <date class="b--card-a__date">13/12/20</date>
+                            <date class="b--card-a__date">13/12/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/regino-sorozabal.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Regino Sorozabal</h4>
+                                    <h4 class="b--card-a__bd__hd__title">Regino Sorozabal. Musika eta errepresioa Guda Zibila eta Frankismoan</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Hitzaldia</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">Karlos Turrillasek Regino Sorozabalen inguruko hitzaldia eskainiko du</p>
                             </div>
-                            <date class="b--card-a__date">17/03/20</date>
+                            <date class="b--card-a__date">17/03/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/euskal-langile-andreak.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Ez eskerrik asko! Gladysen leihoa</h4>
+                                    <h4 class="b--card-a__bd__hd__title">Euskal lagile andreak: lana, bizi estrategiak eta borrokak XX. mendean zehar</h4>
+                                </div> 
+                                <p class="b--card-a__bd__category">Hitzaldia</p>
+                                <p class="b--card-a__bd__content">Euskal Langile Andreak (2019) liburuan oinarritutako hitzaldia eskainiko du Oiane Valerok (IPES), zapalkuntza hirukoitza azalduz</p>
+                            </div>
+                            <date class="b--card-a__date">20/03/21</date>
+                        </a>
+                        <a class="b--card-a" href="./ekintzak/ezeskerrikasko.html">
+                            <div class="b--card-a__bd">
+                                <div class="b--card-a__bd__hd">
+                                    <h4 class="b--card-a__bd__hd__title">Ez, eskerrik asko! Gladysen leihoa</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Dokumentala</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">Gladys del Estal-en inguruko dokumentala ikusi ostean, filmaren sortzaileekin solasaldia izango da Gaztetxean</p>
                             </div>
-                            <date class="b--card-a__date">21/03/20</date>
+                            <date class="b--card-a__date">21/03/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/burgos-prozesua.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
-                                    <h4 class="b--card-a__bd__hd__title">Burgosko prozesua</h4>
+                                    <h4 class="b--card-a__bd__hd__title">El proceso que hizo tambalearse al franquismo. Burgos 1970</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Hitzaldia</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">Amparo Lasheras tratará el tema del proceso de Burgos en su 50 aniversario</p>
                             </div>
-                            <date class="b--card-a__date">24/03/20</date>
+                            <date class="b--card-a__date">24/03/21</date>
                         </a>
-                        <a class="b--card-a" href="#">
+                        <a class="b--card-a" href="./ekintzak/pasaiako-badia.html">
                             <div class="b--card-a__bd">
                                 <div class="b--card-a__bd__hd">
                                     <h4 class="b--card-a__bd__hd__title">Pasaiako Badia</h4>
                                 </div> 
                                 <p class="b--card-a__bd__category">Dokumentala</p>
-                                <p class="b--card-a__bd__content">Lorem ipsum dolor sit amet consectetur adipiscing elit litora tortor turpis, pulvinar.</p>
+                                <p class="b--card-a__bd__content">Pasaiako sarraskiaren inguruko dokumentala proiektatu ostean, dokumentalaren sortzaileekin solasaldia egongo da</p>
                             </div>
-                            <date class="b--card-a__date">28/03/20</date>
+                            <date class="b--card-a__date">28/03/21</date>
                         </a>
                     </div>
                 </div>
@@ -206,16 +219,16 @@
                     <div class="f--col-12">
                         <div class="b--footer-a__social__wrapper">
                             <div class="b--footer-a__social__wrapper__item">
-                                <a class="b--footer-a__social__wrapper__item__link" href="">Instagram</a>
+                                <a class="b--footer-a__social__wrapper__item__link"  href="https://www.instagram.com/gasteizkogaztetxea/" target="_blank" rel="noopener noreferrer">Instagram</a>
                             </div>
                             <div class="b--footer-a__social__wrapper__item">
-                                <a class="b--footer-a__social__wrapper__item__link" href="">Facebook</a>
+                                <a class="b--footer-a__social__wrapper__item__link" href="https://www.facebook.com/gasteizko.gaztetxea" target="_blank" rel="noopener noreferrer">Facebook</a>
                             </div>
                             <div class="b--footer-a__social__wrapper__item">
-                                <a class="b--footer-a__social__wrapper__item__link" href="">Twitter</a>
+                                <a class="b--footer-a__social__wrapper__item__link" href="https://twitter.com/GasteizGaztetxe" target="_blank" rel="noopener noreferrer">Twitter</a>
                             </div>
                             <div class="b--footer-a__social__wrapper__item">
-                                <a class="b--footer-a__social__wrapper__item__link" href="">Youtube</a>
+                                <a class="b--footer-a__social__wrapper__item__link" href="https://www.youtube.com/channel/UCoMP-yKjQQQFgSYAdVUj7lQ/featured" target="_blank" rel="noopener noreferrer">Youtube</a>
                             </div>
                         </div>
                     </div>

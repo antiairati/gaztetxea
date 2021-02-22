@@ -27,7 +27,7 @@ main, .main{
 
 *::selection{
 	color: map-get($color-options, b);
-	background: map-get($color-options, d);
+	background: map-get($color-options, c);
 }
 
 :focus {

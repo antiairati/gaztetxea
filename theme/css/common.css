@@ -48,7 +48,7 @@ main, .main {
 
 *::selection {
   color: #F4F4F4;
-  background: #C12656; }
+  background: #c66733; }
 
 :focus {
   outline: 0; }
@@ -100,7 +100,7 @@ button {
 
 select:-moz-focusring {
   color: transparent !important;
-  text-shadow: 0 0 0 #C12656 !important; }
+  text-shadow: 0 0 0 #971437 !important; }
 
 .f--container {
   max-width: 1380px;
@@ -1125,14 +1125,14 @@ select:-moz-focusring {
   color: #F4F4F4; }
 
 .f--color-c {
-  color: #CC5512; }
+  color: #c66733; }
 
 .f--color-d {
-  color: #C12656; }
+  color: #971437; }
 
 /* Font library */
 .f--font-a {
-  font-family: "Archivo", Helvetica, sans-serif;
+  font-family: "Archivo Black", Helvetica, sans-serif;
   font-weight: 900;
   line-height: normal;
   font-size: 7.5rem; }
@@ -1144,24 +1144,24 @@ select:-moz-focusring {
       font-size: 2.5625rem; } }
 
 .f--font-b {
-  font-family: "Archivo", Helvetica, sans-serif;
+  font-family: "Archivo Black", Helvetica, sans-serif;
   font-weight: 900;
-  line-height: 4.9rem;
-  font-size: 5rem; }
+  line-height: 4.4rem;
+  font-size: 3.9rem; }
   @media all and (max-width: 1200px) {
     .f--font-b {
-      font-size: 4.4rem;
+      font-size: 3.9rem;
       line-height: 3.9rem; } }
   @media all and (max-width: 992px) {
     .f--font-b {
-      font-size: 3rem;
-      line-height: 2.9rem; } }
+      font-size: 2.3rem;
+      line-height: 2.6rem; } }
 
 .f--font-c {
-  font-family: "Archivo", Helvetica, sans-serif;
+  font-family: "Archivo Black", Helvetica, sans-serif;
   font-weight: 900;
   line-height: normal;
-  font-size: 2.5rem; }
+  font-size: 2.4rem; }
   @media all and (max-width: 1200px) {
     .f--font-c {
       font-size: 2rem; } }
@@ -1204,8 +1204,11 @@ select:-moz-focusring {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.7rem;
-  font-size: 1rem;
-  /*this font does not have responsive option */ }
+  font-size: 1rem; }
+  @media all and (max-width: 992px) {
+    .f--font-g {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 
 /* ================================================= Here import the Fonts */
 /* Archivo */
@@ -3556,7 +3559,7 @@ select:-moz-focusring {
     position: relative; }
     .b--header-a__wrapper__title {
       position: relative;
-      font-family: "Archivo", Helvetica, sans-serif;
+      font-family: "Archivo Black", Helvetica, sans-serif;
       font-weight: 800;
       font-size: 1.2rem;
       text-decoration: none !important;
@@ -3642,7 +3645,7 @@ select:-moz-focusring {
   height: 130vh;
   margin: -100px 0 0 0;
   padding: 9.5rem 6rem;
-  right: -90px;
+  right: -286px;
   background: #F4F4F4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3653,6 +3656,13 @@ select:-moz-focusring {
   transform-origin: 0% 0%;
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  @media all and (max-width: 1680px) {
+    .b--nav-a {
+      right: -165px; } }
+  @media all and (max-width: 1440px) {
+    .b--nav-a {
+      right: -90px;
+      padding: 9.5rem 4rem; } }
   @media all and (max-width: 1200px) {
     .b--nav-a {
       right: -80px;
@@ -3669,10 +3679,10 @@ select:-moz-focusring {
     margin-bottom: 1.5rem; }
     .b--nav-a__list-item__link {
       text-decoration: none;
-      font-family: "Archivo", Helvetica, sans-serif;
+      font-family: "Archivo Black", Helvetica, sans-serif;
       font-weight: 900;
       line-height: normal;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       color: #1C1C1C;
       text-transform: uppercase;
       transition: color 0.3s ease; }
@@ -3684,17 +3694,17 @@ select:-moz-focusring {
           font-size: 1.235rem;
           line-height: 1.4rem; } }
       .b--nav-a__list-item__link:hover {
-        color: #C12656; }
+        color: #971437; }
 
 .b--footer-a {
   padding: 2.5rem 0;
   background-color: #1C1C1C;
   color: #F4F4F4; }
   .b--footer-a__title {
-    font-family: "Archivo", Helvetica, sans-serif;
+    font-family: "Archivo Black", Helvetica, sans-serif;
     font-weight: 900;
     line-height: normal;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     letter-spacing: 0.1rem;
     text-align: center;
     margin-bottom: 2.5rem; }
@@ -3718,29 +3728,43 @@ select:-moz-focusring {
       display: inline-flex;
       align-items: center;
       justify-content: center; }
+      @media all and (max-width: 992px) {
+        .b--footer-a__social__wrapper {
+          display: flex;
+          flex-direction: column;
+          border-top: 0px solid transparent;
+          border-bottom: 0px solid transparent; } }
       .b--footer-a__social__wrapper__item {
         width: 16%;
         text-align: center;
-        border-left: 2px solid #F4F4F4; }
+        border-left: 2px solid #F4F4F4;
+        cursor: pointer !important; }
         @media all and (max-width: 992px) {
           .b--footer-a__social__wrapper__item {
-            width: 100%; } }
+            width: 100%;
+            border-bottom: 2px solid #F4F4F4;
+            border-right: 2px solid #F4F4F4; } }
         .b--footer-a__social__wrapper__item:last-child {
           border-right: 2px solid #F4F4F4; }
+          @media all and (max-width: 992px) {
+            .b--footer-a__social__wrapper__item:last-child {
+              border-bottom: 2px solid transparent; } }
         .b--footer-a__social__wrapper__item__link {
           display: inline-block;
           padding: 1rem 0;
           width: 100%;
-          height: 100%;
           font-family: "Open Sans", Helvetica, sans-serif;
           font-weight: 500;
           line-height: 1.7rem;
           font-size: 1rem;
-          /*this font does not have responsive option */
           text-decoration: none !important;
           color: #F4F4F4;
           background-color: transparent;
           transition: all 0.3s ease-in-out; }
+          @media all and (max-width: 992px) {
+            .b--footer-a__social__wrapper__item__link {
+              font-size: 0.9rem;
+              line-height: 1rem; } }
           .b--footer-a__social__wrapper__item__link:hover, .b--footer-a__social__wrapper__item__link:focus {
             color: #1C1C1C;
             background-color: #F4F4F4; }
@@ -3757,6 +3781,9 @@ select:-moz-focusring {
         align-items: flex-start; } }
     .b--footer-a__ft__info {
       text-align: left; }
+      @media all and (max-width: 992px) {
+        .b--footer-a__ft__info {
+          margin-bottom: 0.5rem; } }
       .b--footer-a__ft__info p {
         font-family: "Open Sans", Helvetica, sans-serif;
         font-weight: 300;
@@ -3765,6 +3792,9 @@ select:-moz-focusring {
         /*this font does not have responsive option */ }
     .b--footer-a__ft__lelo {
       text-align: center; }
+      @media all and (max-width: 992px) {
+        .b--footer-a__ft__lelo {
+          margin-bottom: 0.5rem; } }
       .b--footer-a__ft__lelo p {
         font-family: "Open Sans", Helvetica, sans-serif;
         font-weight: 300;
@@ -3773,7 +3803,7 @@ select:-moz-focusring {
         /*this font does not have responsive option */ }
     .b--footer-a__ft__logo {
       text-align: right;
-      font-family: "Archivo", Helvetica, sans-serif;
+      font-family: "Archivo Black", Helvetica, sans-serif;
       font-weight: 800;
       text-decoration: none !important;
       background-color: transparent;
@@ -3830,7 +3860,8 @@ select:-moz-focusring {
   height: auto;
   position: relative; }
   .b--media-a__img {
-    border-radius: 2px; }
+    border-radius: 2px;
+    width: 100%; }
 
 .b--sticky-a {
   position: relative;
@@ -3914,18 +3945,24 @@ select:-moz-focusring {
   font-weight: 500;
   line-height: 1.7rem;
   font-size: 1rem;
-  /*this font does not have responsive option */
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0.5rem; }
+  @media all and (max-width: 992px) {
+    .b--content-a h5 {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 .b--content-a h6 {
   font-family: "Open Sans", Helvetica, sans-serif;
   font-weight: 500;
   line-height: 1.7rem;
   font-size: 1rem;
-  /*this font does not have responsive option */
   font-weight: bold;
   margin-bottom: 0.5rem; }
+  @media all and (max-width: 992px) {
+    .b--content-a h6 {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 .b--content-a ul {
   list-style-type: none;
   list-style-position: outside;
@@ -3991,9 +4028,12 @@ select:-moz-focusring {
     font-weight: 500;
     line-height: 1.7rem;
     font-size: 1rem;
-    /*this font does not have responsive option */
     color: #1C1C1C;
     margin-bottom: 1rem; }
+    @media all and (max-width: 992px) {
+      .b--content-a ul li, .b--content-a ol li {
+        font-size: 0.9rem;
+        line-height: 1rem; } }
     .b--content-a ul li ul, .b--content-a ul li ol, .b--content-a ol li ul, .b--content-a ol li ol {
       margin-top: 1rem; }
     .b--content-a ul li ul li::marker, .b--content-a ol li ul li::marker {
@@ -4005,9 +4045,12 @@ select:-moz-focusring {
   font-weight: 500;
   line-height: 1.7rem;
   font-size: 1rem;
-  /*this font does not have responsive option */
   color: #1C1C1C;
   margin-bottom: 1.5rem; }
+  @media all and (max-width: 992px) {
+    .b--content-a p {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 .b--content-a em {
   font-style: italic; }
 .b--content-a strong {
@@ -4060,11 +4103,14 @@ select:-moz-focusring {
     font-weight: 500;
     line-height: 1.7rem;
     font-size: 1rem;
-    /*this font does not have responsive option */
     font-weight: bold;
     text-transform: uppercase;
     font-style: normal;
     color: #1C1C1C; }
+    @media all and (max-width: 992px) {
+      .b--content-a .wp-block-quote cite {
+        font-size: 0.9rem;
+        line-height: 1rem; } }
 .b--content-a .wp-block-image img {
   margin: 1.5rem 0 0;
   border-radius: 2px; }
@@ -4073,10 +4119,13 @@ select:-moz-focusring {
   font-weight: 500;
   line-height: 1.7rem;
   font-size: 1rem;
-  /*this font does not have responsive option */
   color: #1C1C1C;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem; }
+  @media all and (max-width: 992px) {
+    .b--content-a .wp-block-image figcaption {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 .b--content-a img {
   margin: 0 0 2.5rem;
   height: auto;
@@ -4084,11 +4133,16 @@ select:-moz-focusring {
   border-radius: 2px;
   overflow: hidden; }
 .b--content-a .wp-block-separator {
-  border-bottom: 1px solid #C12656;
+  border-bottom: 1px solid #971437;
   width: 100%;
   display: inline-block;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
+.b--content-a a {
+  color: #c66733;
+  transition: all 0.3s ease-in-out; }
+  .b--content-a a:hover, .b--content-a a:focus {
+    color: #971437; }
 .b--content-a *:last-child {
   margin-bottom: 0px !important; }
 
@@ -4106,7 +4160,7 @@ select:-moz-focusring {
       .b--hero-a__front-items {
         padding-top: 2.5rem; } }
     .b--hero-a__front-items__title {
-      font-family: "Archivo", Helvetica, sans-serif;
+      font-family: "Archivo Black", Helvetica, sans-serif;
       font-weight: 900;
       line-height: normal;
       font-size: 7.5rem;
@@ -4140,7 +4194,7 @@ select:-moz-focusring {
     .b--hero-a__back-items__media {
       height: 25rem;
       stroke-width: 2px;
-      stroke: #C12656; }
+      stroke: #971437; }
       @media all and (max-width: 992px) {
         .b--hero-a__back-items__media {
           height: 10rem; } }
@@ -4182,20 +4236,100 @@ select:-moz-focusring {
     .b--hero-b__back:hover .b--hero-b__back__media path, .b--hero-b__back:focus .b--hero-b__back__media path {
       fill: #1C1C1C; }
   .b--hero-b__title {
-    font-family: "Archivo", Helvetica, sans-serif;
+    font-family: "Archivo Black", Helvetica, sans-serif;
     font-weight: 900;
-    line-height: 4.9rem;
-    font-size: 5rem;
+    line-height: 4.4rem;
+    font-size: 3.9rem;
     color: #1C1C1C;
     text-transform: uppercase; }
     @media all and (max-width: 1200px) {
       .b--hero-b__title {
-        font-size: 4.4rem;
+        font-size: 3.9rem;
         line-height: 3.9rem; } }
     @media all and (max-width: 992px) {
       .b--hero-b__title {
-        font-size: 3rem;
-        line-height: 2.9rem; } }
+        font-size: 2.3rem;
+        line-height: 2.6rem; } }
+
+.b--hero-c {
+  padding-top: 4rem;
+  margin-bottom: 3.5rem; }
+  @media all and (max-width: 992px) {
+    .b--hero-c {
+      margin-bottom: 1.5rem; } }
+  @media all and (max-width: 992px) {
+    .b--hero-c {
+      padding-top: 2.5rem; } }
+  .b--hero-c__back {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none !important;
+    margin-bottom: 2.5rem; }
+    @media all and (max-width: 992px) {
+      .b--hero-c__back {
+        margin-bottom: 1rem; } }
+    .b--hero-c__back__media {
+      height: 2.75rem;
+      width: 2.75rem;
+      margin-right: 1rem; }
+      @media all and (max-width: 992px) {
+        .b--hero-c__back__media {
+          height: 1.5rem;
+          width: 1.5rem; } }
+      .b--hero-c__back__media path {
+        stroke: #1C1C1C;
+        fill: transparent;
+        transition: all 0.3s ease-in-out; }
+    .b--hero-c__back__text {
+      font-family: "Open Sans", Helvetica, sans-serif;
+      font-weight: normal;
+      line-height: 2.125rem;
+      font-size: 1.8rem;
+      color: #1C1C1C; }
+      @media all and (max-width: 992px) {
+        .b--hero-c__back__text {
+          font-size: 1.25rem;
+          line-height: 1.45rem; } }
+    .b--hero-c__back:hover .b--hero-b__back__media path, .b--hero-c__back:focus .b--hero-b__back__media path {
+      fill: #1C1C1C; }
+  .b--hero-c__bd__title {
+    font-family: "Archivo Black", Helvetica, sans-serif;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 2.4rem;
+    color: #1C1C1C;
+    margin-bottom: 1.5rem; }
+    @media all and (max-width: 1200px) {
+      .b--hero-c__bd__title {
+        font-size: 2rem; } }
+    @media all and (max-width: 600px) {
+      .b--hero-c__bd__title {
+        font-size: 1.235rem;
+        line-height: 1.4rem; } }
+  .b--hero-c__bd__subtitle {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 2.125rem;
+    font-size: 1.8rem; }
+    @media all and (max-width: 992px) {
+      .b--hero-c__bd__subtitle {
+        font-size: 1.25rem;
+        line-height: 1.45rem; } }
+  .b--hero-c__info__date {
+    text-align: right;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 2.125rem;
+    font-size: 1.8rem;
+    color: #c66733; }
+    @media all and (max-width: 992px) {
+      .b--hero-c__info__date {
+        font-size: 1.25rem;
+        line-height: 1.45rem; } }
+    @media all and (max-width: 992px) {
+      .b--hero-c__info__date {
+        text-align: left;
+        margin-top: 1rem; } }
 
 .b--card-a {
   display: inline-flex;
@@ -4227,10 +4361,10 @@ select:-moz-focusring {
         background-color: #1C1C1C;
         z-index: 0; }
       .b--card-a__bd__hd__title {
-        font-family: "Archivo", Helvetica, sans-serif;
+        font-family: "Archivo Black", Helvetica, sans-serif;
         font-weight: 900;
         line-height: normal;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin-bottom: 0.5rem;
         transition: all 0.3s ease-in-out;
         position: relative;
@@ -4250,9 +4384,12 @@ select:-moz-focusring {
       font-weight: 500;
       line-height: 1.7rem;
       font-size: 1rem;
-      /*this font does not have responsive option */
       text-transform: uppercase;
       margin-bottom: 1rem; }
+      @media all and (max-width: 992px) {
+        .b--card-a__bd__category {
+          font-size: 0.9rem;
+          line-height: 1rem; } }
       @media all and (max-width: 992px) {
         .b--card-a__bd__category {
           margin-bottom: 0.5rem; } }
@@ -4268,10 +4405,10 @@ select:-moz-focusring {
   .b--card-a__date {
     width: 30%;
     text-align: right;
-    font-family: "Archivo", Helvetica, sans-serif;
+    font-family: "Archivo Black", Helvetica, sans-serif;
     font-weight: 900;
     line-height: normal;
-    font-size: 2.5rem; }
+    font-size: 2.4rem; }
     @media all and (max-width: 1200px) {
       .b--card-a__date {
         font-size: 2rem; } }
@@ -4306,6 +4443,15 @@ select:-moz-focusring {
     padding-left: 1rem;
     transition: 0.3s;
     transform: translateX(0); }
+    @media all and (max-width: 992px) {
+      .b--card-b__media {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        transition: 0.3s; } }
     .b--card-b__media__icon {
       height: 2.75rem;
       margin-right: 1rem; }
@@ -4331,6 +4477,15 @@ select:-moz-focusring {
       .b--card-b__date {
         font-size: 1.25rem;
         line-height: 1.45rem; } }
+    @media all and (max-width: 992px) {
+      .b--card-b__date {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        transition: 0.3s; } }
   .b--card-b__title {
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
@@ -4341,10 +4496,10 @@ select:-moz-focusring {
     transition: 0.3s;
     margin-left: 8.3333333333%;
     transition: 0.3s;
-    font-family: "Archivo", Helvetica, sans-serif;
+    font-family: "Archivo Black", Helvetica, sans-serif;
     font-weight: 900;
     line-height: normal;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #1C1C1C; }
     @media all and (max-width: 1200px) {
       .b--card-b__title {
@@ -4353,6 +4508,18 @@ select:-moz-focusring {
       .b--card-b__title {
         font-size: 1.235rem;
         line-height: 1.4rem; } }
+    @media all and (max-width: 992px) {
+      .b--card-b__title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        transition: 0.3s;
+        margin-left: 0%;
+        transition: 0.3s;
+        margin-top: 1rem; } }
   .b--card-b:hover .b--card-b__media, .b--card-b:focus .b--card-b__media {
     transform: translateX(40px); }
     .b--card-b:hover .b--card-b__media__icon path, .b--card-b:focus .b--card-b__media__icon path {
@@ -4375,7 +4542,7 @@ select:-moz-focusring {
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
-    color: #C12656; }
+    color: #971437; }
     @media all and (max-width: 992px) {
       .b--card-c__category {
         font-size: 1.25rem;
@@ -4387,7 +4554,7 @@ select:-moz-focusring {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 0.25rem;
-    color: #C12656; }
+    color: #971437; }
     @media all and (max-width: 992px) {
       .b--card-c__date {
         font-size: 1.25rem;
@@ -4398,7 +4565,7 @@ select:-moz-focusring {
     line-height: 2.125rem;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #C12656; }
+    color: #971437; }
     @media all and (max-width: 992px) {
       .b--card-c__time {
         font-size: 1.25rem;
@@ -4433,10 +4600,10 @@ select:-moz-focusring {
   .b--form-a__front-items {
     color: #F4F4F4; }
     .b--form-a__front-items__title {
-      font-family: "Archivo", Helvetica, sans-serif;
+      font-family: "Archivo Black", Helvetica, sans-serif;
       font-weight: 900;
       line-height: normal;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       margin-bottom: 1.5rem; }
       @media all and (max-width: 1200px) {
         .b--form-a__front-items__title {
