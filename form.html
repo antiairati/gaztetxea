@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./theme/css/common.css">
 </head>
 <body>
-    <!-- FORM -->
+    <!-- FORM SECTION -->
     <section class="b--form-a">
         <div class="b--form-a__back-items">
             <div class="b--form-a__back-items__overlay"></div>
@@ -17,8 +17,21 @@
                 <div class="f--row">
                     <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12">
                         <h4 class="b--form-a__front-items__title">Izena eman!</h4>
-                        <p class="b--form-a__front-items__subtitle">Covid 19 dela eta, convallis mauris dictum risus parturient congue, senectus augue penatibus vel consequat id potenti primis sed, ultrices iaculis pharetra enim vivamus sapien nam. </p>
+                        <p class="b--form-a__front-items__subtitle">Covid 19 dela eta, Gaztetxeko osasun-protokoloa jarraitu eta ekintzetarako izena eman beharko da. Izena emateko epea ekintza bera baina astebete lehenago zabalduko da.</p>
+                        <p class="b--form-a__front-items__message">*Formulario honen bidez jasotako datuak kudeaketarako erabiliko dira soilik. Ekintza amaitu ostean ezabatuko dira.
+                        </p>
+                        <p class="b--form-a__front-items__subtitle"><i>Debido al Covid 19, se deberá seguir el protocolo sanitario del Gaztetxe e inscribirse en las actividades. El plazo de inscripción se abrirá una semana antes de la misma actividad.</i>
+                        <p class="b--form-a__front-items__message"><i>*Los datos recogidos a través de este formulario son para uso exclusivo de gestón. Se eliminarán una vez finalizada la actividad.</i>
+                        </p>
                     </div>
+                    <!-- IF THERE ARE NO PLACES -->
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12"> 
+                        <div class="b--form-a__front-items__no-form">
+                            <p>Sentitzen dugu, ez da lekurik geratzen ekintza honetarako! </p>
+                            <p><i>Lo sentimos, no quedan plazas para esta actividad.</i></p>
+                        </div>
+                    </div>
+                    <!-- FORM -->
                     <div class="f--col-6 f--col-tabletp-8 f--col-mobile-12">
                         <div class="f--row">
                             <div class="f--col-6 f--col-tabletp-12">
@@ -47,8 +60,15 @@
                                 </div>
                             </div>
                             <div class="f--col-6">
-                                <input type="submit">
+                                <input class="b--btn-a f--mt-24" type="submit" value="Bidali">
                             </div>
+                        </div>
+                    </div>
+                    <!-- FORM SUBMITED -->
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12">
+                        <div class="b--form-a__front-items__submited">
+                            <p>Eskerrik asko! Izen ematea behar bezala bete da.</p>
+                            <p><i>Muchas gracias! Has reservado plaza correctamente.</i></p>
                         </div>
                     </div>
                 </div>
