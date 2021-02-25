@@ -1,0 +1,17 @@
+.b--btn-a{
+    display: block;
+    position: relative;
+    padding: $measure/2 $measure*3;
+    background-color: transparent;
+    border: 2px solid map-get($color-options, e);
+    border-radius: $border-radius-a;
+    @include make-font-g();
+    text-transform: uppercase;
+    color: map-get($color-options, e);
+    transition: all $time-a ease-in-out;
+    &:hover, &:focus{
+        background-color: rgba(map-get($color-options, a), 0.89);
+        color: map-get($color-options, c);
+        border: 2px solid map-get($color-options, c);
+    }
+}

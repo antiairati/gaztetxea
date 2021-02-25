@@ -12,7 +12,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            background-color: rgba(map-get($color-options, a), 0.65);
+            background-color: rgba(map-get($color-options, a), 0.8);
             z-index: 0;
         }
         &__media{
@@ -35,7 +35,21 @@
         }
         &__subtitle{
             @include make-font-f();
+            margin-bottom: $measure;
+        }
+        &__message{
+            @include make-font-g();
             @include make-bt-b();
+        }
+
+        &__no-form{
+            @include make-font-f();
+            color: map-get($color-options, c);
+        }
+        &__submited{
+            @include make-font-f();
+            color: map-get($color-options, e);
+            margin-top: $measure*4;
         }
     }
 }
