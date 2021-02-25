@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="./../theme/img/katua.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <!-- Header-a -->
@@ -99,14 +100,14 @@
                             </p>
                         </div>
                         <!-- IF THERE ARE NO PLACES -->
-                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12"> 
+                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="beteta"> 
                             <div class="b--form-a__front-items__no-form">
                                 <p>Sentitzen dugu, ez da lekurik geratzen ekintza honetarako! </p>
                                 <p><i>Lo sentimos, no quedan plazas para esta actividad.</i></p>
                             </div>
                         </div>
                         <!-- FORM -->
-                        <div class="f--col-6 f--col-tabletp-8 f--col-mobile-12">
+                        <div class="f--col-6 f--col-tabletp-8 f--col-mobile-12" id="form">
                             <div class="f--row">
                                 <div class="f--col-6 f--col-tabletp-12">
                                     <div class="b--field-a">
@@ -121,8 +122,11 @@
                                 <div class="f--col-6 f--col-tabletp-12">
                                     <div class="b--field-a">
                                         <input class="b--field-a__input" type="text" id="email" name="email" placeholder="Email*">
+                                        
                                     </div>
                                 </div>
+                                
+                                <input class="b--field-a__input" type="text" id="ekintza_id" name="ekintza_id" value= 1 disabled hidden>
                                 <div class="f--col-6 f--col-tabletp-12">
                                     <div class="b--field-a">
                                         <select class="b--field-a__select" name="zenbat" id="zenbat">
@@ -134,15 +138,27 @@
                                     </div>
                                 </div>
                                 <div class="f--col-6">
-                                    <input class="b--btn-a f--mt-24" type="submit" value="Bidali">
+                                    <input class="b--btn-a f--mt-24" type="submit" value="Bidali" id="submit">
                                 </div>
                             </div>
                         </div>
                         <!-- FORM SUBMITED -->
-                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12">
+                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="erreserbatuta">
                             <div class="b--form-a__front-items__submited">
                                 <p>Eskerrik asko! Izen ematea behar bezala bete da.</p>
                                 <p><i>Muchas gracias! Has reservado plaza correctamente.</i></p>
+                            </div>
+                        </div>
+                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="errorErreserba">
+                            <div class="b--form-a__front-items__submited">
+                                <p>ERRORE bat egon da izan ematean, saiatu berriro.</p>
+                                <p><i>Ha habido un ERROR en el registro, prueba otra vez.</i></p>
+                            </div>
+                        </div>
+                        <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="errorea">
+                            <div class="b--form-a__front-items__submited">
+                                <p>Algun campo no esta rellanado o no has metido un email con un formato correcto. Revisalo por favor</p>
+                                <p><i>Algun campo no esta rellanado o no has metido un email con un formato correcto. Revisalo por favor</i></p>
                             </div>
                         </div>
                     </div>
@@ -202,4 +218,6 @@
         </div>
     </footer>
 </body>
+<script type="text/javascript" src="./checkAforo.js"></script>
+<script type="text/javascript" src="./form-query.js"></script>
 </html>
