@@ -30,9 +30,9 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 	
 	// Datos de la base de datos
 	$usuario = "qaeu793";
-	$password = "PWVJ78mGJ";
-	$servidor = "qaeu793.gasteizkogaztetxea.com";
-	$basededatos = "qaeu793";
+	//$password = "PWVJ78mGJ";
+	//$servidor = "qaeu793.gasteizkogaztetxea.com";
+	//$basededatos = "qaeu793";
 
   // creación de la conexión a la base de datos con mysql_connect()
   $conexion = mysqli_connect( $servidor, $usuario, $password, $basededatos) or die ("No se ha podido conectar al servidor de BBDD");
@@ -54,12 +54,12 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     // Configuracion SMTP
     $mail->SMTPDebug =0;                         // Mostrar salida (Desactivar en producción)
 		$mail->isSMTP();                                               // Activar envio SMTP
-		$mail->Host  = 'smtp.serviciodecorreo.es';                     // Servidor saliente SMTP
+		//$mail->Host  = 'smtp.serviciodecorreo.es';                     // Servidor saliente SMTP
 		$mail->SMTPAuth  = true;                                       // Identificacion SMTP
-		$mail->Username  = 'ekintzak@gasteizkogaztetxea.com';                  // Usuario SMTP
-		$mail->Password  = 'gasteiz12GTX';	          // Contraseña SMTP
-		$mail->SMTPSecure ='ssl';
-		$mail->Port  = 465;
+		//$mail->Username  = 'ekintzak@gasteizkogaztetxea.com';                  // Usuario SMTP
+		//$mail->Password  = 'gasteiz12GTX';	          // Contraseña SMTP
+		//$mail->SMTPSecure ='ssl';
+		//$mail->Port  = 465;
 		$mail->setFrom('ekintzak@gasteizkogaztetxea.com', 'GTX');                // correo + nombre emisor
 
     // Destinatarios
