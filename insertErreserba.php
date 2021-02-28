@@ -67,9 +67,9 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
     // Contenido del correo
     $mail->isHTML(true);
-    $mail->Subject = 'Asunto del correo';
-    $mail->Body  = 'Zure erreserba ondo egin da<br/>'.$izena.'hwelloo';
-    $mail->AltBody = 'Contenido del correo en texto plano para los clientes de correo que no soporten HTML';
+    $mail->Subject = 'Gasteizko Gaztetxeko erreserba';
+    $mail->Body  = 'Kaixo'.$izena. '<br/> Gaztetxeko ekintzarako izena eman duzu.<br/> Te has apuntado a la actividad del Gaztetxe. <br/> Arazorik izanez gero idatzi gaztetxe.kultura@gmail.com emailera, ez erantzun email honi. <br/><br/> Mila esker! <br/> Gasteizko Gaztetxea';
+    $mail->AltBody = 'Kaixo! Gaztetxeko ekintzarako izena eman duzu.Te has apuntado a la actividad del Gaztetxe. Arazorik izanez gero idatzi gaztetxe.kultura@gmail.com emailera, ez erantzun email honi. Mila esker! Gasteizko Gaztetxea';
     $mail->send();
   
   } catch (Exception $e) {
