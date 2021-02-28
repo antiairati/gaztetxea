@@ -1,5 +1,6 @@
 .b--field-a{
     margin-bottom: $measure;
+    position: relative;
     &__input{
         @include make-generic-input(b);
 

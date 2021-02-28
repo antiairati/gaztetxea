@@ -4664,7 +4664,8 @@ select:-moz-focusring {
           line-height: 1.45rem; } }
 
 .b--field-a {
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  position: relative; }
   .b--field-a__input {
     font-size: 1em;
     padding: 0.938rem 1.5rem 0.938rem 0.5rem;
@@ -4702,9 +4703,12 @@ select:-moz-focusring {
     position: absolute;
     right: 0;
     top: 20px;
-    width: 20px;
+    width: 15px;
+    height: 15px;
     pointer-events: none;
     color: #F4F4F4; }
+    .b--field-a__icon path {
+      fill: #F4F4F4; }
     @media not all and (min-resolution: 0.001dpcm) {
       .b--field-a__icon {
         top: 20px !important;
