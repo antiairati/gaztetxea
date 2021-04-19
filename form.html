@@ -10,7 +10,7 @@
     <section class="b--form-a">
         <div class="b--form-a__back-items">
             <div class="b--form-a__back-items__overlay"></div>
-            <img class="b--form-a__back-items__media" src="./theme/img/asanblada-1988.jpg" alt="">
+            <img class="b--form-a__back-items__media" src="./../theme/img/asanblada-1988.jpg" alt="">
         </div>
         <div class="b--form-a__front-items">
             <div class="f--container">
@@ -25,14 +25,14 @@
                         </p>
                     </div>
                     <!-- IF THERE ARE NO PLACES -->
-                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12"> 
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="beteta"> 
                         <div class="b--form-a__front-items__no-form">
                             <p>Sentitzen dugu, ez da lekurik geratzen ekintza honetarako! </p>
                             <p><i>Lo sentimos, no quedan plazas para esta actividad.</i></p>
                         </div>
                     </div>
                     <!-- FORM -->
-                    <div class="f--col-6 f--col-tabletp-8 f--col-mobile-12">
+                    <div class="f--col-6 f--col-tabletp-8 f--col-mobile-12" id="form">
                         <div class="f--row">
                             <div class="f--col-6 f--col-tabletp-12">
                                 <div class="b--field-a">
@@ -47,8 +47,11 @@
                             <div class="f--col-6 f--col-tabletp-12">
                                 <div class="b--field-a">
                                     <input class="b--field-a__input" type="text" id="email" name="email" placeholder="Email*">
+                                    
                                 </div>
                             </div>
+                            
+                            <input class="b--field-a__input" type="text" id="ekintza_id" name="ekintza_id" value= 8 disabled hidden>
                             <div class="f--col-6 f--col-tabletp-12">
                                 <div class="b--field-a">
                                     <select class="b--field-a__select" name="zenbat" id="zenbat">
@@ -61,15 +64,27 @@
                                 </div>
                             </div>
                             <div class="f--col-6">
-                                <input class="b--btn-a f--mt-24" type="submit" value="Bidali">
+                                <input class="b--btn-a f--mt-24" type="submit" value="Bidali" id="submit">
                             </div>
                         </div>
                     </div>
                     <!-- FORM SUBMITED -->
-                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12">
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="erreserbatuta">
                         <div class="b--form-a__front-items__submited">
                             <p>Eskerrik asko! Izen ematea behar bezala bete da.</p>
                             <p><i>Muchas gracias! Has reservado plaza correctamente.</i></p>
+                        </div>
+                    </div>
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="errorErreserba">
+                        <div class="b--form-a__front-items__submited">
+                            <p>AKATS bat egon da izan ematean, saiatu berriro.</p>
+                            <p><i>Ha habido un ERROR en el registro, prueba otra vez.</i></p>
+                        </div>
+                    </div>
+                    <div class="f--col-8 f--col-tabletp-10 f--col-mobile-12" id="errorea">
+                        <div class="b--form-a__front-items__submited">
+                            <p>Algun campo no esta rellanado o no has metido un email con un formato correcto. Revisalo por favor</p>
+                            <p><i>Algun campo no esta rellanado o no has metido un email con un formato correcto. Revisalo por favor</i></p>
                         </div>
                     </div>
                 </div>
